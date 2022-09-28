@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --ff: 'Roboto Condensed', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-bg: #1b1b1d;
+    --clr-light: #fff;
+    --clr-accent1: #db1212;
+    --clr-accent2: #ff8a00;
+    --clr-accent3: #ffd001;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.125em rgba(0,0,0,.125)
+}
+
+@media (min-width: 800px){
+    :root{
+        --fs-h1:4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+/* General Styles */
+body{
+    background: var(--clr-bg);
+    color: var(--clr-light);
+    margin: 0;
+    font-family: var(--ff);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+#about{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 3rem;
+}
+p{
+    margin-left: 2rem;
+}
